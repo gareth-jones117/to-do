@@ -1,8 +1,7 @@
-import { faTasks } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
 export const EditTodoForm = ({ editTodo, task }) => {
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState(task.task)
 
   const handleSubmit = (e) => {
     e.preventDefault()
